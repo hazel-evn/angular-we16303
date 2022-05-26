@@ -1,5 +1,6 @@
-<button (click)="onHandleClick()">Click</button>
-<div *ngIf="productStatus">
+<!-- <button (click)="onHandleClick()">Click</button>
+<div *ngIf="productStatus"> -->
+    <a routerLink="/product/add">Thêm sản phẩm</a>
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -11,22 +12,24 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let products of productList; let i = index">
+            <tr *ngFor="let products of products; let i = index">
                 <td>{{i + 1}}</td>
                 <td>{{products.name}}</td>
                 <td>{{products.price}}</td>
                 <td>{{products.status ? "Con hang" : "Het hang"}}</td>
                 <td>
-                    <button class="btn btn-danger" (click)="onHandleDelete(products.id) ">Delete</button>
+                    <button class="btn btn-danger">Delete</button>
                 </td>
             </tr>
         </tbody>
     </table>
-</div>
+<!-- </div>
 
 <form action="">
     <input type="text" (keypress)="onHandleKeyPress($event)" value="{{title}}">
     {{ title }}
 </form>
 
-<input type="text" [(ngModel)]="title" value="{{title}}"> {{title}}
+<input type="text" [(ngModel)]="title" value="{{title}}"> {{title}} 
+(click)="onHandleDelete(products.id)
+-->

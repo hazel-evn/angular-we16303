@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import mockData from 'src/data';
 import { TypeProducts } from './models/products';
 
 @Component({
@@ -7,20 +8,7 @@ import { TypeProducts } from './models/products';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  productList: TypeProducts[] = [
-    {
-      id: 1,
-      name: "Product A",
-      price: 200,
-      status: false
-    },
-    {
-      id: 2,
-      name: "Product B",
-      price: 200,
-      status: true
-    },
-  ]
+  productList: TypeProducts[] = mockData;
   onHandleAdd(product: any){
     this.productList.push(product)
   }
