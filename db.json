@@ -8,9 +8,20 @@
     },
     {
       "id": 2,
-      "name": "Product B",
+      "name": "Product b",
       "price": 200,
-      "status": true
+      "status": false
+    },
+    {
+      "id": 3,
+      "name": "Product c",
+      "price": 200,
+      "status": false
+    },
+    {
+      "name": "Product d",
+      "price": 1123123,
+      "id": 4
     }
-]
+  ]
 }

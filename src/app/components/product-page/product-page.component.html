@@ -1,7 +1,4 @@
-<!-- <button (click)="onHandleClick()">Click</button>
-<div *ngIf="productStatus"> -->
-    <a routerLink="/product/add">Thêm sản phẩm</a>
-    <table class="table table-bordered">
+<table class="table table-bordered">
         <thead>
             <tr>
                 <th>STT</th>
@@ -18,18 +15,9 @@
                 <td>{{products.price}}</td>
                 <td>{{products.status ? "Con hang" : "Het hang"}}</td>
                 <td>
-                    <button class="btn btn-danger">Delete</button>
+                    <button class="btn btn-danger" (click)="removeProduct(products.id)">Delete</button>
+                    <button class="btn btn-primary"><a [routerLink]="['product/edit/', products.id]" class="text-white">Edit</a></button>
                 </td>
             </tr>
         </tbody>
     </table>
-<!-- </div>
-
-<form action="">
-    <input type="text" (keypress)="onHandleKeyPress($event)" value="{{title}}">
-    {{ title }}
-</form>
-
-<input type="text" [(ngModel)]="title" value="{{title}}"> {{title}} 
-(click)="onHandleDelete(products.id)
--->

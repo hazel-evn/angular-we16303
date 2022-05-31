@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import mockData from 'src/data';
 import { TypeProducts } from './models/products';
 
 @Component({
@@ -8,9 +7,5 @@ import { TypeProducts } from './models/products';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  productList: TypeProducts[] = mockData;
-  onHandleAdd(product: any){
-    this.productList.push(product)
-  }
   
 }

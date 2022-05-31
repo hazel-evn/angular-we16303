@@ -1,8 +1,7 @@
-<p>product-add works!</p>
+<p>product-edit works!</p>
 {{ product | json }}
-
 <form (ngSubmit)="onSubmit()">
     <input type="text" placeholder="name" [(ngModel)]="product.name" name="name">
     <input type="number" placeholder="number" [(ngModel)]="product.price" name="price">
-    <button>Thêm</button>
+    <button>Edit</button>
 </form>
