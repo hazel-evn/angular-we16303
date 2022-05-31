@@ -6,6 +6,8 @@ import { ProductEditComponent } from './components/product-edit/product-edit.com
 import { ProductPageComponent } from './components/product-page/product-page.component';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { ClientComponent } from './layouts/client/client.component';
+import { SigninComponent } from './pages/signin/signin.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 const routes: Routes = [
   {path: "", component: ProductPageComponent},
@@ -13,6 +15,8 @@ const routes: Routes = [
   {path: "product/add", component: ProductAddComponent},
   {path: "product/edit/:id", component: ProductEditComponent},
   {path: "product/:id", component: ProductDetailComponent},
+  {path: "signin", component: SigninComponent},
+  {path: "signup", component: SignupComponent},
   {
     path: "",
     component: ClientComponent,

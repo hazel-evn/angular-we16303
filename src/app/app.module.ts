@@ -11,6 +11,8 @@ import { ClientComponent } from './layouts/client/client.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductEditComponent } from './components/product-edit/product-edit.component';
+import { SigninComponent } from './pages/signin/signin.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ProductEditComponent } from './components/product-edit/product-edit.com
     AdminComponent,
     ClientComponent,
     ProductDetailComponent,
-    ProductEditComponent
+    ProductEditComponent,
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

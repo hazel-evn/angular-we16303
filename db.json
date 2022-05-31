@@ -23,5 +23,19 @@
       "price": 1123123,
       "id": 4
     }
+  ],
+  "users": [
+    {
+      "username": "Loc",
+      "password": "123",
+      "email": "loc@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "loc2@gmail.com",
+      "password": "$2a$10$pkN8UpEUeNjXMSauIlcoGud9uaWda1OD.gTDOiqDwMITmzau0/tqW",
+      "username": "loc2",
+      "id": 2
+    }
   ]
 }
