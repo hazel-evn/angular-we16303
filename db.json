@@ -36,6 +36,12 @@
       "password": "$2a$10$pkN8UpEUeNjXMSauIlcoGud9uaWda1OD.gTDOiqDwMITmzau0/tqW",
       "username": "loc2",
       "id": 2
+    },
+    {
+      "email": "123123@gmail.com",
+      "password": "$2a$10$cWy7GCYwLaFIiGRrECutyO8qsGjW7kHz78yB62K5zRuNP0oPmawiO",
+      "username": "4124124",
+      "id": 3
     }
   ]
 }

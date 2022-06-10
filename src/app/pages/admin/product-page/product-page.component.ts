@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TypeProducts } from 'src/app/models/products';
-import { ProductService } from "../../services/product.service"
+import { ProductService } from "../../../services/product.service"
 @Component({
   selector: 'app-product-page',
   templateUrl: './product-page.component.html',

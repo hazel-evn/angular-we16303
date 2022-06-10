@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap');
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body {
+    font-family: 'Heebo', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container-fluid{
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.infomation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 148px;
+}
+.infomation .infomation__name h2{
+    max-width: 506px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 1.5px;
+}
+.infomation .infomation__introduce{
+    padding: 40px 0;
+    max-width: 480px;
+}
+.infomation .infomation__button button{
+    background-color: #FF6464;
+    width: 208px;
+    height: 47px;
+}
+.infomation .infomation__button a{
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+/* End Infomation */
+.post{
+    background-color: #EDF7FA;
+    padding: 20px 148px;
+}
+.post__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post__header p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.post__header a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.post__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.containers{
+    height: 295px;
+    width: 406px;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.post__title{
+    width: 374px;
+    height: 85px;
+}
+.post__title a{
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
+.post__detail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 0;
+    width: 374px;
+    height: 34px;
+    gap: 30px;
+}
+.post__desc{
+    width: 368px;
+    height: 117px;
+}
+/* End post */
+
+.work{
+    padding: 20px 148px;
+}
+.work__header{
+    font-size: 18px;
+    font-weight: 400;
+}
+.container {
+    display: grid;
+    grid-template-columns: 246px auto;
+    gap: 20px;
+    border-bottom: solid 1px #E0E0E0;
+    padding: 20px 0;
+}
+.work__title a {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
+.work__detail{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.work__detail .work__date{
+    background-color: #142850;
+    color: #FFFFFF;
+    width: 50px;
+    height: 24px;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.work__desc{
+    width: 507px;
+    font-size: 14px;
+    font-weight: 300;
+}

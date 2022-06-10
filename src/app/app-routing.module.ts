@@ -1,29 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductAddComponent } from './components/product-add/product-add.component';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-import { ProductEditComponent } from './components/product-edit/product-edit.component';
-import { ProductPageComponent } from './components/product-page/product-page.component';
+import { ProductAddComponent } from './pages/admin/product-add/product-add.component';
+import { ProductDetailComponent } from './pages/admin/product-detail/product-detail.component';
+import { ProductEditComponent } from './pages/admin/product-add/product-edit/product-edit.component';
+import { ProductPageComponent } from './pages/admin/product-page/product-page.component';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { ClientComponent } from './layouts/client/client.component';
-import { SigninComponent } from './pages/signin/signin.component';
-import { SignupComponent } from './pages/signup/signup.component';
+import { HomePageComponent } from './pages/clients/homepage/homepage.component';
+import { SigninComponent } from './pages/clients/signin/signin.component';
+import { SignupComponent } from './pages/clients/signup/signup.component';
 
 const routes: Routes = [
-  {path: "", component: ProductPageComponent},
-  {path: "product", component: ProductPageComponent},
-  {path: "product/add", component: ProductAddComponent},
-  {path: "product/edit/:id", component: ProductEditComponent},
-  {path: "product/:id", component: ProductDetailComponent},
-  {path: "signin", component: SigninComponent},
-  {path: "signup", component: SignupComponent},
+  // {path: "", component: HomePageComponent},
+  // {path: "product", component: ProductPageComponent},
+  // {path: "product/add", component: ProductAddComponent},
+  // {path: "product/edit/:id", component: ProductEditComponent},
+  // {path: "product/:id", component: ProductDetailComponent},
+  // {path: "signin", component: SigninComponent},
+  // {path: "signup", component: SignupComponent},
   {
     path: "",
     component: ClientComponent,
     children: [
       {
         path: "",
-        component: ProductPageComponent
+        component: HomePageComponent
       },
       {
         path: "product",
