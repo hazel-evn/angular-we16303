@@ -1,0 +1,41 @@
+.works__detail{
+    padding: 70px 148px;
+}
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+.detail__title h1 {
+    width: 506px;
+    font-size: 34px;
+    font-weight: bold;
+}
+.detail__introduce{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.detail__date p {
+    height: 26px;
+    width: 50px;
+    background-color: #FF7C7C;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 16px;
+}
+.detail__desc {
+    width: 681px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.detail__head{
+    padding-top: 40px;
+}
+.detail__img{
+    padding: 20px 0;
+}

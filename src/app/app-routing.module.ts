@@ -1,23 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductAddComponent } from './pages/admin/product-add/product-add.component';
-import { ProductDetailComponent } from './pages/admin/product-detail/product-detail.component';
-import { ProductEditComponent } from './pages/admin/product-add/product-edit/product-edit.component';
-import { ProductPageComponent } from './pages/admin/product-page/product-page.component';
+import { BlogAddComponent } from './pages/admin/blogs/blog-add/blog-add.component';
+import { BlogEditComponent } from './pages/admin/blogs/blog-edit/blog-edit.component';
+import { BlogListComponent } from './pages/admin/blogs/blog-list/blog-page.component';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { ClientComponent } from './layouts/client/client.component';
 import { HomePageComponent } from './pages/clients/homepage/homepage.component';
 import { SigninComponent } from './pages/clients/signin/signin.component';
 import { SignupComponent } from './pages/clients/signup/signup.component';
+import { BlogPageComponent } from './pages/clients/blog-page/blog-page.component';
+import { WorksComponent } from './pages/clients/works/works.component';
+import { ContactPageComponent } from './pages/clients/contact-page/contact-page.component';
+import { WorkDetailComponent } from './pages/clients/works-detail/works-detail.component';
+import { CateListComponent } from './pages/admin/categories/cate-list/cate-list.component';
+import { UserListComponent } from './pages/admin/users/user-list/user-list.component';
+import { CateAddComponent } from './pages/admin/categories/cate-add/cate-add.component';
 
 const routes: Routes = [
-  // {path: "", component: HomePageComponent},
-  // {path: "product", component: ProductPageComponent},
-  // {path: "product/add", component: ProductAddComponent},
-  // {path: "product/edit/:id", component: ProductEditComponent},
-  // {path: "product/:id", component: ProductDetailComponent},
-  // {path: "signin", component: SigninComponent},
-  // {path: "signup", component: SignupComponent},
   {
     path: "",
     component: ClientComponent,
@@ -27,18 +26,64 @@ const routes: Routes = [
         component: HomePageComponent
       },
       {
-        path: "product",
-        component: ProductPageComponent
+        path:"blog",
+        component: BlogPageComponent
       },
       {
-        path: "product/:id",
-        component: ProductDetailComponent
-      }
+        path:"works",
+        component: WorksComponent
+      },
+      {
+        path:"contact",
+        component: ContactPageComponent
+      },
+      {
+        path:"works/:id",
+        component: WorkDetailComponent
+      },
+      {
+        path:"signin",
+        component: SigninComponent
+      },
+      {
+        path:"signup",
+        component: SignupComponent
+      },
     ]
   },
   {
     path: "admin",
-    component: AdminComponent
+    component: AdminComponent,
+    children: [
+      {
+        path: "",
+        component: AdminComponent
+      },
+      {
+        path: "categories",
+        component: CateListComponent
+      },
+      {
+        path: "categories/add",
+        component: CateAddComponent
+      },
+      {
+        path: "blog",
+        component: BlogListComponent
+      },
+      {
+        path: "blog/add",
+        component: BlogAddComponent
+      },
+       {
+        path: "blog/edit/:id",
+        component: BlogEditComponent
+      },
+      {
+        path: "user",
+        component: UserListComponent
+      },
+    ]
   }
 ];
 

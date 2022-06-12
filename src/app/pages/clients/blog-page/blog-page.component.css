@@ -1,0 +1,25 @@
+.blog{
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 70px 148px;
+}
+.container {
+    border-bottom: 1px solid #E0E0E0;
+    padding: 20px 0;
+}
+.blog__title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.blog__detail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 374px;
+    height: 34px;
+    gap: 30px;
+    padding: 20px 0;
+}
+.blog__desc{
+    width: 682px;
+}

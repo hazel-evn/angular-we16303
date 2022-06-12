@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
+import { environment } from 'src/environments/environment';
+import { TypeUser } from '../models/users';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  apiUrl: string = "http://localhost:3000/users";
-  constructor(private http: HttpClient) { }
-  signUp(user: any){
-     return this.http.post(`${this.apiUrl}`, user);
+    constructor(private http: HttpClient) { }
+  signUp(user:TypeUser):Observable<TypeUser>{
+     return this.http.post<TypeUser>(`${environment.signup}`, user);
   }
-  signIn(user: any){
-    return this.http.post(`${this.apiUrl}`, user);
+  SignIn(user:TypeUser):Observable<TypeUser>{
+    return this.http.post<TypeUser>(`${environment.signin}`, user);
   }
 
 }

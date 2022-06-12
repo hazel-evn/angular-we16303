@@ -42,6 +42,12 @@
       "password": "$2a$10$cWy7GCYwLaFIiGRrECutyO8qsGjW7kHz78yB62K5zRuNP0oPmawiO",
       "username": "4124124",
       "id": 3
+    },
+    {
+      "email": "nvloc@gmail.com",
+      "password": "$2a$10$OaHNDh1uJR4wwYM/J.AoZ.Fmy.a6n9KBWcWb.hfHZHnNDQbOdTD32",
+      "id": 4,
+      "username": "Nguyen Van Loc"
     }
   ]
 }

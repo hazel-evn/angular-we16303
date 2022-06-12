@@ -1,0 +1,16 @@
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let category of categories; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ category.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,6 +1,9 @@
 export interface TypeProducts {
-    id: number,
+    _id: string,
     name: string,
-    price: number,
-    status: boolean
+    image: string,
+    catePostId: string,
+    short_desc: string,
+    desc: string
+
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="work">
+            <div class="work__header">
+                <h2>Work</h2>
+            </div>
+            <div class="work__content py-2">
+                <div class="container" *ngFor="let product of products">
+                    <div class="work__img">
+                        <img src="../../../assets/work 1.png" alt="" />
+                    </div>
+                    <div class="work__show">
+                        <div class="work__title">
+                            <a routerLink="/works/{{ product._id }}">{{ product.name }}</a>
+                        </div>
+                        <div class="work__detail">
+                            <div class="work__date">2020</div>
+                            <div class="work_cate opacity-80">Dashboard</div>
+                        </div>
+                        <div class="work__desc">
+                            {{ product.short_desc }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

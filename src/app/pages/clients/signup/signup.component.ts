@@ -7,7 +7,8 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  users: {username: string, password: string, email: string} = {
+  users: {id: number, username: string, password: string, email: string} = {
+    id: 0,
     username: "",
     password: "",
     email: ""

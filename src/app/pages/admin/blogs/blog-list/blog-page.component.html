@@ -1,0 +1,27 @@
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th class="">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let products of products; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ products.name }}</td>
+                <td>{{ products.image }}</td>
+                <td>
+                    <button class="btn btn-danger" (click)="removeProduct(products._id)">
+                        Delete
+                    </button>
+                    <button class="btn btn-primary">
+                        <a [routerLink]="['edit/', products._id]" class="text-white">Edit</a>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
